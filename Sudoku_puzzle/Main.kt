@@ -11,7 +11,8 @@ fun main() {
         intArrayOf(0, 0, 0, 0, 8, 0, 0, 7, 9)
     )
 
-    if(SudokuSolver.solve(board)) {
+    val sudokuSolver = SudokuSolver()
+    if(sudokuSolver.solve(board)) {
         println("Solved Sudoku:")
         printBoard(board)
     } else {
